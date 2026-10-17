@@ -26,6 +26,11 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v6
 
+      # --- เพิ่มขั้นตอน Challenge ตรงนี้ ---
+      - name: Check index.html file
+        run: test -f index.html
+      # ----------------------------------
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
